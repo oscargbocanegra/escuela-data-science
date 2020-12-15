@@ -49,24 +49,17 @@ Programa de condicionales donde se aprende como funciona if
 <h2>Clase 7 - Cadenas y entradas.</h2>
 
 *   input es una entrada por teclado que almacena el valor en formato string. Ej. variable = input('Texto ').
-
 * para convertir el valor ingresado en input es necesario convertir el tipo de texto es se hace de la siguiente forma. Ej. variable = int(input('1')).
 
 <br><h3>frase = 'bienvenidos a platzi con el curso pensamiento computacional'</h3>
 
 * Para contar la cantidad usamos len
     print(len(frase)).
-
 * para saber cuantas veces aparece un caracter usamos count. Ej. print(frase.count('i')).
-
 * Para remplazar un caracter por otro usamos la función replace. Ej. print(frase.replace('i','k')).
-
 * Para separar el string en una lista con todos los string usamos split. Ej. print(frase.split(' ')).
-
 * Para asignar mayusculas a la primera letra se usa la funcion . Ej. print(frase.capitalize()).
-
 * Para asignar mayusculas a todas las primera letras se usa la funcion title. Ej. print(frase.title()).
-
 * Para concatenar tambien se puede usar la expresion f´ . Ej. f'{"Hip " * 3} Hurra' 
 
 <h1>Clase 8 - Programas Ramificados.</h1>
@@ -117,3 +110,13 @@ Programa de condicionales donde se aprende como funciona if
 * MAX = es la funcion que nos regresa el numero mas alto del objetivo
 * La busque binaria solo funiona cuando esta ordenado nuestro objeto.
 * Ejemplo en el erchivo busqueda_binaria.py
+
+<h1>Clase 15 - Funciones abstraccion.</h1>
+
+* Que es la abstracción = Es la operacion de un objeto sin necesidar de conocer su función: Ej. una calculadora, un coche.
+* Decomposición = Es la divición de objetos en partes, pedasos de codigo que agilizan la programacion.
+* para crear una función se realiza con la siguiente estructura.
+    * def <nombre> (<parametros>):
+          <cuerpo>
+          return <expresion>
+

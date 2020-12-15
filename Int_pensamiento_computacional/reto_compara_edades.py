@@ -8,8 +8,8 @@ def comparar (persona1, persona2):
         return print(f'{persona2} es mayor que {persona1}')
 
 def run():
-    persona1_nombre = input('Cual es su Nombre: ')
-    persona2_nombre = input('Cual es su Nombre: ')
+    persona1_nombre = input('Cual es su Nombre participante Uno: ')
+    persona2_nombre = input('Cual es su Nombre participante Dos: ')
     comparar(persona1_nombre,persona2_nombre)
 
 if __name__ == "__main__":
