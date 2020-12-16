@@ -116,7 +116,30 @@ Programa de condicionales donde se aprende como funciona if
 * Que es la abstracción = Es la operacion de un objeto sin necesidar de conocer su función: Ej. una calculadora, un coche.
 * Decomposición = Es la divición de objetos en partes, pedasos de codigo que agilizan la programacion.
 * para crear una función se realiza con la siguiente estructura.
-    * def <nombre> (<parametros>):
-          <cuerpo>
-          return <expresion>
+    * def <#nombre> (#parametros):
+          <#cuerpo>
+          return <#expresion>
 
+<h1>Clase 16 - Scope o Alcance.</h1>
+
+* Scope o Alcance = Es el valor y alcance que puede tener una variable o función al ser invocada en el programa. Ej.
+    - x = 300
+    - def myfunc():
+        - global x
+        - x = 200
+    - myfunc()
+    - print(x)
+
+Para este ejemplo se observa como la variable x contiene 2 valores ya que X fuera de la funcion myfunc no tiene el alcance de la x = 200.
+
+<h1>Clase 17 - Especificaciones del codigo """ docstring """.</h1>
+
+* La """ triple commilla """ valor """ es una convencion que permite comunicar que hace el codigo.
+* Para consultar la descripcion se usa help(funcion).
+* Esto permite documentar y leer funciones en python.
+
+<h1>Clase 18 - Recursividad.</h1>
+
+* Algoritmica = Es una forma de crear soluciones utilizando el principio de divide y venceras.
+* Programatica = Una tecnica mediante una funcion se llame asi misma otra vez.
+* Ejemplo de recursividad en el programa factoriales.py
