@@ -48,20 +48,49 @@ Programa de condicionales donde se aprende como funciona if
 
 <h2>Clase 7 - Cadenas y entradas.</h2>
 
-*   input es una entrada por teclado que almacena el valor en formato string. Ej. variable = input('Texto ').
-* para convertir el valor ingresado en input es necesario convertir el tipo de texto es se hace de la siguiente forma. Ej. variable = int(input('1')).
+*   input es una entrada por teclado que almacena el valor en formato string. 
 
-<br><h3>frase = 'bienvenidos a platzi con el curso pensamiento computacional'</h3>
+```
+variable = input('Texto ')
+```
 
+* para convertir el valor ingresado en input es necesario convertir el tipo de texto es se hace de la siguiente forma. Ej. 
+    ```
+    variable = int(input('1'))
+    ```
+    ```
+    frase = 'bienvenidos a platzi con el curso pensamiento computacional'
+    ```
 * Para contar la cantidad usamos len
-    print(len(frase)).
-* para saber cuantas veces aparece un caracter usamos count. Ej. print(frase.count('i')).
-* Para remplazar un caracter por otro usamos la función replace. Ej. print(frase.replace('i','k')).
-* Para separar el string en una lista con todos los string usamos split. Ej. print(frase.split(' ')).
-* Para asignar mayusculas a la primera letra se usa la funcion . Ej. print(frase.capitalize()).
-* Para asignar mayusculas a todas las primera letras se usa la funcion title. Ej. print(frase.title()).
-* Para concatenar tambien se puede usar la expresion f´ . Ej. f'{"Hip " * 3} Hurra' 
+    ```
+        print(len(frase))
+    ```
+* para saber cuantas veces aparece un caracter usamos count.
+    ```
+    print(frase.count('i')).
+    ```
+* Para remplazar un caracter por otro usamos la función replace.
+    ```
+    Ej. print(frase.replace('i','k'))
+    ```
+* Para separar el string en una lista con todos los string usamos split. 
+    ```
+    print(frase.split(' '))
+    ```
 
+* Para asignar mayusculas a la primera letra se usa la funcion .
+    ```
+    print(frase.capitalize()).
+    ```
+
+* Para asignar mayusculas a todas las primera letras se usa la funcion title. 
+    ```
+    print(frase.title()).
+    ```
+* Para concatenar tambien se puede usar la expresion f´ . 
+    ```
+    f'{"Hip " * 3} Hurra' 
+    ```
 <h1>Clase 8 - Programas Ramificados.</h1>
 <h2> Operadores de comparacion.</h2>
 
@@ -82,14 +111,21 @@ Programa de condicionales donde se aprende como funciona if
 
 * Los bucles definidos se implementan a través del keyword for 
 * Iterable se entiende como una colección de objetos que se van recorriendo.
-* Ej. bucle iterable.  frutas = ["Manzanas","peras","piñas"]  >>>>  for fruta in frutas:
+* Ej. bucle iterable.
+    ```
+    frutas = ["Manzanas","peras","piñas"]
+    
+    for fruta in frutas:
+        print (fruta)
+    ```
 * Bucles con diccionarios se pueden iterar de la siguiente forma.
-    * Ej. estudiantes = {'mexico':10, 'colombia': 20, 'Argentina:30'}.
-        * for pais in estudiantes:
-        * for pais in estudiantes.keys():
-        * for numero_estudiantes is estudiantes.values():
-        * for pais, numero_estudiantes is estudiantes.items():
-
+```
+estudiantes = {'mexico':10, 'colombia': 20, 'Argentina:30'}
+    for pais in estudiantes:
+    for pais in estudiantes.keys():
+    for numero_estudiantes is estudiantes.values():
+    for pais, numero_estudiantes is estudiantes.items():
+```
 <h1>Clase 12 - Enumeración exhaustiva.</h1>
 
 * Lo primero que se hace es enumerar todas las posibles opciones.
@@ -116,20 +152,22 @@ Programa de condicionales donde se aprende como funciona if
 * Que es la abstracción = Es la operacion de un objeto sin necesidar de conocer su función: Ej. una calculadora, un coche.
 * Decomposición = Es la divición de objetos en partes, pedasos de codigo que agilizan la programacion.
 * para crear una función se realiza con la siguiente estructura.
-    * def <#nombre> (#parametros):
-          <#cuerpo>
-          return <#expresion>
-
+    ```
+    def <#nombre> (#parametros):
+        <#cuerpo>
+        return <#expresion>
+    ```
 <h1>Clase 16 - Scope o Alcance.</h1>
 
 * Scope o Alcance = Es el valor y alcance que puede tener una variable o función al ser invocada en el programa. Ej.
-    - x = 300
-    - def myfunc():
-        - global x
-        - x = 200
-    - myfunc()
-    - print(x)
-
+    ```
+    x = 300
+    def myfunc():
+        global x
+        x = 200
+    myfunc()
+    print(x)
+    ```
 Para este ejemplo se observa como la variable x contiene 2 valores ya que X fuera de la funcion myfunc no tiene el alcance de la x = 200.
 
 <h1>Clase 17 - Especificaciones del codigo """ docstring """.</h1>
@@ -143,3 +181,26 @@ Para este ejemplo se observa como la variable x contiene 2 valores ya que X fuer
 * Algoritmica = Es una forma de crear soluciones utilizando el principio de divide y venceras.
 * Programatica = Una tecnica mediante una funcion se llame asi misma otra vez.
 * Ejemplo de recursividad en el programa factoriales.py
+
+<h1>Clase 21 - Tuplas.</h1>
+
+* Las tuplas son secuencias, al igual que las listas la diferencia esta en que las tuplas son inmutables es decir no se pueden modificar.
+* Las tupas se escriben entre parentesis (tupla)
+El contenido de una tupla puede ser de tipo String, int, float.
+* Cuando una tupla tiene un solo valor se debe asignar una coma al final para que no pierda el formato de tupla. Ej. tupla = (3) se debe asignar la (,) al final Ej. tupla = (3,)
+* Las tuplas se pueden acceder por el indice.
+    * tupla = (1,2,'hola') accediendo por el indice tupla[0]
+* Desempaquetar = Las tuplas se pueden desempaquetar y asignar a variables.
+    ```
+    tupla = (1,2,'hola')
+    x,y,z = tupla   
+    ```
+<h1>Clase 22 - Rangos.</h1>
+
+* Representan una seccion de enteros con un inicio y fin.
+* Los rangos tambien son inmutables no se pueden modificar.
+* Ventajas que se puede conocer el uso de memoria ya que se pueden limitar.
+* Ejemplo = range(comienzo, fin, pasos)
+
+<h1>Clase 25 - Pruebas de caja negra.</h1>
+
