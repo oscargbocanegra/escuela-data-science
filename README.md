@@ -82,31 +82,31 @@ CURSOS ESCUELA DE CIENCIA DE DATOS PLATZI
     ```
 # Operadores de comparación.
 
-    * (==) Es un operador de igualdad -- 2 == 3
-    * (!=) Es un operador de No igualdad o desigualdad 2 != 3
-    * (<=)(>=) Otro tipo de operadores de comparación.
-    * AND OR NOT Son operadores lógicos 
+* (==) Es un operador de igualdad -- 2 == 3
+* (!=) Es un operador de No igualdad o desigualdad 2 != 3
+* (<=)(>=) Otro tipo de operadores de comparación.
+* AND OR NOT Son operadores lógicos 
 
 # Iteraciones.
 
-    * Nos permiten realizar la tarea en varias iteraciones las veces que sea necesario.
-    * Se pueden construir iteraciones anidadas estilo un reloj donde el segundo avanza para que el minuto tambien avance.
-    * BREAK = Es un comando que permite finalizar una iteración.
-    * CONTINUE = Es un comando que permite saltar una iteración del ciclo.
-    * Ejemplos de iteraciones en archivo iteraciones.py
+* Nos permiten realizar la tarea en varias iteraciones las veces que sea necesario.
+* Se pueden construir iteraciones anidadas estilo un reloj donde el segundo avanza para que el minuto tambien avance.
+* BREAK = Es un comando que permite finalizar una iteración.
+* CONTINUE = Es un comando que permite saltar una iteración del ciclo.
+* Ejemplos de iteraciones en archivo iteraciones.py
 
 # Bucles For.
 
-    * Los bucles definidos se implementan a través del keyword for 
-    * Iterable se entiende como una colección de objetos que se van recorriendo.
-    * Ej. bucle iterable.
-        ```py
-        frutas = ["Manzanas","peras","piñas"]
-        
-        for fruta in frutas:
-            print (fruta)
-        ```
-    * Bucles con diccionarios se pueden iterar de la siguiente forma.
+* Los bucles definidos se implementan a través del keyword for 
+* Iterable se entiende como una colección de objetos que se van recorriendo.
+* Ej. bucle iterable.
+    ```py
+    frutas = ["Manzanas","peras","piñas"]
+    
+    for fruta in frutas:
+        print (fruta)
+    ```
+* Bucles con diccionarios se pueden iterar de la siguiente forma.
     ```py
     estudiantes = {'mexico':10, 'Colombia': 20, 'Argentina:30'}
         for país in estudiantes:
@@ -116,8 +116,8 @@ CURSOS ESCUELA DE CIENCIA DE DATOS PLATZI
     ```
 # Enumeración exhaustiva.
 
-    * Lo primero que se hace es enumerar todas las posibles opciones.
-    * Ejemplo en el ejercicion de enumeracion.py donde ingresa un numero y este busca si tiene raiz cuadrada exacta
+* Lo primero que se hace es enumerar todas las posibles opciones.
+* Ejemplo en el ejercicion de enumeracion.py donde ingresa un numero y este busca si tiene raiz cuadrada exacta
 
 # Aproximación de soluciones.
 
@@ -128,14 +128,14 @@ CURSOS ESCUELA DE CIENCIA DE DATOS PLATZI
 * Ejemplo en el archivo aproximacion.py
 * ABS = Es una función que retorna el valor absoluto.
 
-<h1>Clase 14 - Búsqueda binaria. </h1>
+# Búsqueda binaria.
 
 * En este tipo de busqueda se simplifica al cortar la busqueda a la mitad en cada itaracion.
 * MAX = es la funcion que nos regresa el numero mas alto del objetivo
 * La busque binaria solo funiona cuando esta ordenado nuestro objeto.
 * Ejemplo en el archivo busqueda_binaria.py
 
-<h1>Clase 15 - Funciones abstracción. </h1>
+# Funciones abstracción.
 
 * Que es la abstracción = Es la operacion de un objeto sin necesidar de conocer su función: Ej. una calculadora, un coche.
 * Decomposición = Es la divición de objetos en partes, pedasos de codigo que agilizan la programacion.
@@ -145,7 +145,7 @@ CURSOS ESCUELA DE CIENCIA DE DATOS PLATZI
         <#cuerpo>
         return <#expresión>
     ```
-<h1>Clase 16 - Scope o Alcance. </h1>
+# Scope o Alcance. </h1>
 
 * Scope o Alcance = Es el valor y alcance que puede tener una variable o función al ser invocada en el programa. Ej.
     ```py
@@ -158,19 +158,19 @@ CURSOS ESCUELA DE CIENCIA DE DATOS PLATZI
     ```
 Para este ejemplo se observa como la variable x contiene 2 valores ya que X fuera de la funcion myfunc no tiene el alcance de la x = 200.
 
-<h1>Clase 17 - Especificaciones del codigo """ docstring """.</h1>
+# Especificaciones del codigo """ docstring """.
 
 * La """ triple commilla """ valor """ es una convencion que permite comunicar que hace el codigo.
 * Para consultar la descripción se usa help(función).
 * Esto permite documentar y leer funciones en python.
 
-<h1>Clase 18 - Recursividad. </h1>
+# Recursividad.
 
 * Algoritmica = Es una forma de crear soluciones utilizando el principio de divide y venceras.
 * Programatica = Una tecnica mediante una funcion se llame asi misma otra vez.
 * Ejemplo de recursividad en el programa factoriales.py
 
-<h1>Clase 21 - Tuplas. </h1>
+# Tuplas.
 
 * Las tuplas son secuencias, al igual que las listas la diferencia esta en que las tuplas son inmutables es decir no se pueden modificar.
 * Las tupas se escriben entre paréntesis (tupla)
@@ -183,11 +183,89 @@ El contenido de una tupla puede ser de tipo String, int, float.
     tupla = (1,2,'hola')
     x,y,z = tupla   
     ```
-<h1>Clase 22 - Rangos. </h1>
+# Rangos.
 
 * Representan una sección de enteros con un inicio y fin.
 * Los rangos también son inmutables no se pueden modificar.
 * Ventajas que se puede conocer el uso de memoria ya que se pueden limitar.
 * Ejemplo = range (comienzo, fin, pasos)
 
-<h1>Clase 25 - Pruebas de caja negra.</h1>
+# Pruebas de caja negra.
+
+* Se basan en la especificacion de la función o el programa.
+* Prueba inputs y valida outputs
+* Unit testing o Integration testing
+* Ejemplo prueba de caja negra.
+    * Importar la libreria unittest
+        ```py
+        import unittest
+        ```
+    * Generacion del codigo test que describe los casos posibles a probar.
+        ```py
+        class CajaNegraTest(unittest.TestCase):
+
+            def test_suma_dos_positivos(self):
+                num_1 = 10
+                num_2 = 5
+
+                resultado = suma(num_1, num_2)
+
+                self.assertEqual(resultado, 15)
+        ```
+    *  Se crea la funcion que contiene los pasos a ejecutar.
+        ```py
+        def suma(num_1, num_2):
+            return num_1 + num_2 
+        ```
+    * Comando para ejecutar el archivo.
+        ```bash
+        $ py caja_negra.py  
+        ```
+    * Resultado de la ejecución.
+        ```bash
+        .
+        ----------------------------------------------------------------------
+        Ran 1 test in 0.000s
+
+        OK
+        ```
+
+# Pruebas de caja de cristal
+
+* Se basan en el flujo del programa.
+* Prueban todos los caminos posibles de una función. (Ramificaciones, bucles for, while, recursión).
+* Regression testing o mocks.
+* Ejemplo prueba caja de cristal.
+    * Importar la libreria unittest
+        ```py
+        import unittest
+        ```
+    * Generacion del codigo test que describe los casos posibles a probar.
+        ```py
+         class PruebaDeCristalTest(unittest.TestCase):
+                def test_es_mayor_de_edad(self):
+                    edad = 20
+                    resultado = es_mayor_de_edad(edad)
+                    self.assertEqual(resultado, True)
+
+        if __name__ == "__main__":
+            unittest.main()
+        ```
+    * Comando para ejecutar el archivo.
+            ```bash
+            $ py  prueba_caja_cristal.py
+            ```
+    * Resultado de la ejecución.
+        ```bash
+                .
+            ----------------------------------------------------------------------
+            Ran 1 test in 0.000s
+
+            OK
+        ```
+
+# Debugging.
+
+* Aprender a usar el print statement.
+* Estudia los datos disponibles.
+* Usa los datos para crear hipotesis y experimientos **Metodo Cientifico**
