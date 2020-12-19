@@ -269,3 +269,17 @@ El contenido de una tupla puede ser de tipo String, int, float.
 * Aprender a usar el print statement.
 * Estudia los datos disponibles.
 * Usa los datos para crear hipotesis y experimientos **Metodo Cientifico**
+* Debugear es un proceso de busqueda, cada prueba debe acotar el espacio de busqueda.
+
+* ***Errores Comunes***
+* Buscar los sospechosos comunes.
+* Comenta el problema con alguien mas, esto te forza a que seas claro.
+* Lleva un registro de lo  que has tratado.
+* ***VETE A DORMIR ***
+
+# Manejo de excepciones.
+
+* Son controles a excepciones que sabemos van a ocurrir
+* En python se relacionan con errores de semantica
+* Una pesima practica es silenciar las excepciones que es el paso cuando solo se imprimen.
+* Ejemplo en el archivo ***excepciones.py***
