@@ -102,3 +102,9 @@ ____
 - **(<=)(>=)** Otro tipo de operadores de comparación.
 - **AND OR NOT** Son operadores lógicos
 ____
+## Iteraciones.
+
+- Es una forma de realizar tareas en forma secuencial.
+- Se puede manejar con diferentes ciclos que permiten repetir las tareas 
+    - iteraciones con el ciclo for {for <variable> in <iterable>: <expresion>}
+    - Iteraciones con el ciclo while {while <expresion> <condicion>:}
