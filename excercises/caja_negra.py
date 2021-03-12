@@ -1,6 +1,13 @@
 import unittest
 
 def suma(num_1, num_2):
+    """
+    Funcion que suma dos numeros.
+    Num_1 = primer numero  en leer.
+    Num_2 = segundo numero en leer.
+    Return la sumatoria de los 2 numeros
+    """
+
     return num_1 + num_2
 
 class CajaNegraTest(unittest.TestCase):

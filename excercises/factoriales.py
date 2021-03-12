@@ -1,7 +1,9 @@
 def factorial(n):
-    """ Funcion que calcula el factorial de n
+    """Funcion que calcula el factorial de n.
+
     n int > 0 
     return n!
+    
     """
     print(n)
     if n == 1:
