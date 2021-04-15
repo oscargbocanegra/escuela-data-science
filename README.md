@@ -4,13 +4,6 @@
    - [Introducción al cómputo](#Introducción-al-cómputo)
    - [Introducción a lenguajes de programación](#Introducción-a-lenguajes-de-programación)
    - [Elementos Básicos de programación](#Elementos-Básicos-de-programación)
-   - [Cadenas y entradas](#Cadenas-y-entradas)
-   - [Operadores de comparación](#Operadores-de-comparación)
-
-   - [](#)
-   - [](#)
-   - [](#)
-   - [](#)
 
 
 ____
@@ -48,63 +41,21 @@ ____
     - Son nombres que apuntan a un espacio en memoria. 
     - Hacen los programas comprensibles
     - El operador (=) asocia una variable con un error
-____
-## Cadenas y entradas
-- Son secuencias de caracteres.
-- Se pueden hacer operaciones con las cadenas.
-- Se pueden mezclar para hacer diferentes tipos de computo.
-- Son inmutables. Una vez declaradas no se puede modificar.
 
-- Ejemplo de operaciones con cadenas y python.
-- **input:** Es una entrada por teclado que almacena el valor en formato string.
-    ```py
-    variable = input('Texto ')
-    ```
-- para convertir el valor ingresado en input es necesario convertir el tipo de texto es se hace de la siguiente forma.
-    ```py
-    variable = int(input('1'))
-    ```
-    ```py
-            frase = 'bienvenidos a platzi con el curso pensamiento computacional'
-    ```
-- Para contar la cantidad usamos len
-    ```py
-        print(len(frase))
-    ```
-- para saber cuántas veces aparece un carácter usamos count.
-    ```py
-    print(frase.count('i')).
-    ```
-- Para reemplazar un carácter por otro usamos la función replace.
-    ```py
-    print(frase.replace('i','k'))
-    ```
-- Para separar el string en una lista con todos los string usamos split.
-    ```py
-    print(frase.split(' '))
-    ```
-- Para asignar mayúsculas a la primera letra se usa la función.
-    ```py
-    print(frase.capitalize()).
-    ```
-- Para asignar mayúsculas a todas las primeras letras se usa la funcion title.
-    ```py
-    print(frase.title()).
-    ```
-- Para concatenar también se puede usar la expresión f´.
-    ```py
-    f'{"Hip " * 3} Hurra'
-    ```
-____
-## Operadores de comparación
-- **(==)** Es un operador de igualdad -- 2 == 3
-- **(!=)** Es un operador de No igualdad o desigualdad 2 != 3
-- **(<=)(>=)** Otro tipo de operadores de comparación.
-- **AND OR NOT** Son operadores lógicos
-____
-## Iteraciones.
 
-- Es una forma de realizar tareas en forma secuencial.
-- Se puede manejar con diferentes ciclos que permiten repetir las tareas 
-    - iteraciones con el ciclo for {for <variable> in <iterable>: <expresion>}
-    - Iteraciones con el ciclo while {while <expresion> <condicion>:}
+
+
+
+
+
+
+---
+Author
+  - Oscar Giovanni Bocanegra
+  - https://www.linkedin.com/in/oscarbocanegra/
+
+___
+Fuentes.
+  - Cursos de [OpenWebinars](https://openwebinars.net/).
+  - Cursos de Platzi [Platzi](http://platzi.com/)
+___
