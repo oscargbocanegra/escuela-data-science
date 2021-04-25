@@ -32,7 +32,6 @@ ___
 - [***Instalando dependencias en entornos virtuales.***](#Instalando-dependencias-en-entornos-virtuales)
 
 - [Ejercicios.](#ejercicios)
-- [Creditos.](#creditos)
 ___
 
 ## ***Características.***
@@ -237,6 +236,10 @@ ___
 ___
 ## ***Creando entornos virtuales***
 - Crear una carpeta del proyecto.
+- Comando para instalar un entorno virtual.
+    ```py
+      apt-get install python3-venv
+    ```
 - Comando para crear el entorno virtual.
     ```py
       python3 -m venv venv
