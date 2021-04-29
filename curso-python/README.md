@@ -291,13 +291,40 @@ ___
       pip uninstall <paquete>
     ```
 - Comando 
-```py
+  ```py
       pip 
     ```
+## ***Instalando un servidor de pruebas http ***
+- Comando para instalar un servidor de pruebas http.
+  ```py
+    python3 -m http.server 8889
+  ```
+## ***Instalando un servidor con python***
+- Comando para instalar un servidor con python.
+  ```py
+    sudo apt-get install python3-pip
+  ```
+- Comando para instalar Flask.
+  ```py
+    pip install Flask
+  ```
+- Comando para consultar version Flask.
+  ```py
+    python -m flask --version
+  ```
+- Comando para configurar la shell con aplicación a trabajar configurando FLASK_APP variable de entorno.
+  ```py
+    export FLASK_APP=hello.py
+  ```
+- Comando para ejecutar Flask.
+  ```py
+    flask run
+  ```
+- 
 # Ejercicios.
 - Todos los ejemplos se encuentran en la carpeta ejemplos mencionados en el archivo LISTADO-EJERCICIOS.md
 
----
+____
 Author
   - Oscar Giovanni Bocanegra
   - https://www.linkedin.com/in/oscarbocanegra/
