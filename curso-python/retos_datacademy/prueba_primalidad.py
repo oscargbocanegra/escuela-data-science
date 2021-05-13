@@ -1,3 +1,4 @@
+# Funcion que recibe un numero como argumento y procesa la funcion para validar si es primo.
 def es_primo(numero):
     contador = 0
     for i in range (1, numero + 1):
@@ -10,7 +11,7 @@ def es_primo(numero):
     else:
         return False
 
-
+# Funcion que pide un numero por consola y ejecuta la funciono numero par validar el numero.
 def run():
     numero = int(input('Escribe un numero: '))
     if es_primo(numero):
