@@ -1,0 +1,19 @@
+Curso Hadoop.
+
+Configuración.
+	1. Clonar repositorio => git clone https://github.com/terranigmark/curso-hadoop-platzi.git
+	2. Crear una red sudo docker network create --driver=bridge hadoop
+	3. Inicializar contenedores con archivo start-container.sh => sudo ./start-container.sh
+	4. Levantar servicio hadoop.
+		- Ingresar al contenedor master. => docker exec -it {id} /bin/bash
+		- ejecutar => ./start-hadoop.sh
+
+	
+COMANDOS HADOOP.
+- Crer carpetas => hdfs dfs -p {carpeta}
+- Consultar directorio => hdfs dfs -ls
+- Trasladar archivos => hdfs dfs -put {archivo} {carpeta/}
+
+
+
+
