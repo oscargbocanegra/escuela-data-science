@@ -11,8 +11,8 @@ ___
  # Hadoop.
  - HDFS = Sistema de archivos distribuidos.
   <p align="center"> <img src ="./images/hdfs-arquiteture.png"></p>
-
- - Job Node => Es el job que se encarga de realizar los trabajos.
+ 
+ - Job Node => Es el job que se encarga de realizar todas las tareas y/o trabajos.
  - Name Node => Es el registro donde esta la ubicacion de los datos.
  - Data Node => Es donde se encuentran registrado los datos.
 ____
@@ -29,9 +29,9 @@ ____
  - Avro formato.
 ____
  ## Comandos Hadoop.
- - Crer carpetas => hdfs dfs -p {carpeta}
- - Consultar directorio => hdfs dfs -ls
- - Trasladar archivos => hdfs dfs -put {archivo} {carpeta/}
+ - hdfs dfs -p {carpeta} => Crer carpetas
+ - hdfs dfs -ls => Consultar directorio
+ - hdfs dfs -put {archivo} {carpeta/} => Trasladar archivos
 ____
  # Yarn.
 <p align="center"> <img src ="./images/yarn-arquiteture.png"></p>
