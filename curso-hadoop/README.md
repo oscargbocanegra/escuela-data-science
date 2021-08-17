@@ -3,8 +3,12 @@ INDICE.
   - [Configuración Hadoop.](#configuración-hadoop)
   - [Tipos de  compresion.](#tipos-de--compresion)
   - [Comandos Hadoop.](#comandos-hadoop)
-- [MapReduce.](#MapReduce)
 - [Yarn.](#yarn)
+  - [Configuración Hadoop.](#configuración-hadoop-1)
+  - [Tipos de compresion.](#tipos-de-compresion)
+  - [Comandos Hadoop.](#comandos-hadoop-1)
+- [MapReduce.](#mapreduce)
+- [Yarn.](#yarn-1)
 - [Recursos.](#recursos)
 - [Author.](#author)
 - [Fuentes.](#fuentes)
@@ -12,7 +16,6 @@ ____
 # Hadoop.
   - HDFS = Sistema de archivos distribuidos.
   <p align="center"> <img src ="./images/hdfs-arquiteture.png"></p>
-<<<<<<< HEAD
  
  - Job Node => Es el job que se encarga de realizar todas las tareas y/o trabajos.
  - Name Node => Es el registro donde esta la ubicacion de los datos.
@@ -37,7 +40,6 @@ ____
 ____
  # Yarn.
 <p align="center"> <img src ="./images/yarn-arquiteture.png"></p>
-=======
 
   - Job Node => Es el job que se encarga de realizar los trabajos.
   - Name Node => Es el registro donde esta la ubicacion de los datos.
@@ -72,7 +74,6 @@ ___
   
   - Ejemplo.
   <p align="center"> <img src ="./images/Mapreduce.png"></p>
->>>>>>> 561647c75747bcb075b6870df9c10a84bfa3c18b
 
 ___
 # Yarn.
