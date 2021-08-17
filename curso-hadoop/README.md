@@ -32,6 +32,7 @@ ____
  ## Tipos de  compresion.
  - Parquet formato.
  - Avro formato.
+  <p align="center"> <img src ="./images/formatoscompresion.png"></p>
 ____
  ## Comandos Hadoop.
  - hdfs dfs -p {carpeta} => Crer carpetas
