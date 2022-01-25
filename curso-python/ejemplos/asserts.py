@@ -7,4 +7,5 @@ def primera_letra(lista_de_palabras):
         primeras_letras.append(palabra[0])
     return print(primeras_letras)
 
+
 primera_letra('uno')

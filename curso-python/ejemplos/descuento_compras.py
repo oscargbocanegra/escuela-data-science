@@ -6,4 +6,5 @@ porcentaje_descuento = int(input('Ingrese el porcentaje de descuento : '))
 descuento = (valor_compra * porcentaje_descuento)/100
 total_factura = valor_compra - descuento
 
-print('El valor de su compra es :' + str(valor_compra) + ' Menos el descuento de ' +str(porcentaje_descuento) + ' Total a pagar ' + str(total_factura ))
+print('El valor de su compra es :' + str(valor_compra) + ' Menos el descuento de ' +
+      str(porcentaje_descuento) + ' Total a pagar ' + str(total_factura))
